@@ -14,7 +14,7 @@ addBtn.addEventListener("click", function () {
   taskText.textContent = userInput.value;
 
   taskText.addEventListener("click", function () {
-    taskText.style.textDecoration = "line-through";
+    taskText.classList.toggle("completed");
   });
 
   //create a delete button to remove task
